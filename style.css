@@ -1,0 +1,209 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+
+:root{
+    --bg-color: #10101a;
+    --main-color: rgb(191, 47, 47);
+    --nd-main-color: #ffffffcc;
+    --text-color: #fff;
+    --big-font: 5rem;
+    --h2-font: 1.9rem;
+    --p-font: 1rem;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+header{
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-color);
+    padding: 24px 14%;
+    transition: 3s
+}
+
+.logo{
+    color: var(--text-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+span{
+    color: var(--main-color);
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    color: var(--text-color);
+    font-size: 1rem;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+.navbar a:hover{
+    background: var(--main-color);
+    transition: 0.3s;
+}
+section{
+    padding: 120px 14%;
+}
+.Home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 6rem;
+    align-items: center;
+}
+.Home-text h5{
+    color: var(--text-color);
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0 0 20px;
+}
+.Home-text h1{
+    color: var(--text-color);
+    font-size: var(--big-font);
+    font-weight: 700;
+    line-height: 1;
+    margin: 0 0 20px;
+}
+.center{
+    text-align: center;
+}
+.center h3{
+    color: var(--text-color);
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 6px;
+}
+.Pendidikan-img img {
+    margin: 8x;
+    padding: 30px;
+    max-width: 250px;
+    height: 300px;
+    letter-spacing: 6px;
+    text-align: center;
+}
+.Pendidikan2-img img {
+    margin: 8px;
+    padding: 30px;
+    width: 250px;
+    height: 210px;
+    text-align: center;
+}
+.Pendidikan-text p{
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 1500;
+    letter-spacing: 5px;
+    margin: 0 0 10px;
+}
+.h > ul > li > a{
+    text-decoration: none;
+    color: #fff;
+}
+.h > ul > li > a:hover{
+    color: #fa4545;
+}
+.center h3{
+    color: var(--text-color);
+    font-size: 30px;
+    font-weight: 10;
+    margin: 0 0 40px;
+    padding: 5px 15px;
+}
+th, td {
+    border: 1px solid #CCCCCC;
+    padding: 5px 15px;
+    letter-spacing: 5px;
+}
+.Aktivitas-text h4{
+    color: var(--text-color);
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0 0 20px;
+}
+.center{
+    text-align: center;
+}
+.center h3{
+    color: var(--text-color);
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 6px;
+}
+.hub{   
+    position: relative;
+    top: 50px;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+
+}
+.tombol{
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background: var(--bg-color);
+    margin: 10px;
+    border-radius: 30%;
+    box-sizing: 0 5px 15px -5px #d3090970;
+    overflow: hidden;
+    position: relative;
+    color: var(--main-color);
+}
+.tombol i{
+    transition: 0.2s linear;
+    font-size: 26px;
+    line-height: 90px;
+}
+.tombol:hover i{
+    transform: scale(1.3);
+    color:#fa4545;
+}
+.tombol::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: -120px;
+    top: 90%;
+    transform: rotate(45ged);
+    background: #f1f1f1;
+}
+.tombol:hover::before {
+    left: -10px;
+    top: -10px;
+    animation: aaa 0.7s 1;
+}
+@keyframes aaa{
+    0%{
+    left: -110px;
+    top: 90px;
+    }
+    50%{
+        left: -10px;
+        top: -30px;
+        }
+        100%{
+            left: -10px;
+            top: -10px;
+            }
+}
